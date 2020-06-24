@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
       let commentLi = document.createElement("li");
       commentLi.innerText = comment;
       list.appendChild(commentLi);
-
     }else{
       alert("Comment field cannot be blank!");
     }
