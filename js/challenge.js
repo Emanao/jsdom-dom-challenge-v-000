@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
   document.getElementById("submit").addEventListener("click", ()=>{
     let comment = document.getElementById("comment-input").value;
     if (comment.trim !=""){
-      let list = document.getElementById("list").value;
+      let list = document.getElementById("list");
       let commentLi = document.createElement("li");
       commentLi.innerText = comment;
       list.appendChild(commentLi);
