@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 
   document.getElementById("heart").addEventListener("click", ()=>{
-    li = document.createElement("li");
+    let li = document.createElement("li");
     li.setAttribute("id", sec);
     li.innerText = `${sec} has been clicked 1 time`;
     document.querySelector("ul.likes").appendChild(li);
@@ -63,6 +63,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
   });
 
   document.getElementById("submit").addEventListener("click", ()=>{
-    alert("submit");
+    let comment = document.getElementById("comment-input").value;
+    if (comment.trim !=""){
+      let list = document.getElementById("list").value;
+      li = document.createElement("li");
+      
+    }else{
+      alert("Comment field cannot be blank!");
+    }
   });
 });
