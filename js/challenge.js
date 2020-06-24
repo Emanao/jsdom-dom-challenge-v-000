@@ -70,9 +70,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
       commentLi.innerText = comment;
       list.appendChild(commentLi);
       document.getElementById("comment-input").value ="";
-      event.preventDefault();
     }else{
       alert("Comment field cannot be blank!");
     }
+    event.preventDefault();
   });
 });
