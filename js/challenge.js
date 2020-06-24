@@ -62,13 +62,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
     startCounter();
   });
 
-  document.getElementById("submit").addEventListener("click", ()=>{
+  document.getElementById("submit").addEventListener("click", (event)=>{
     let comment = document.getElementById("comment-input").value;
     if (comment.trim !=""){
       let list = document.getElementById("list");
       let commentLi = document.createElement("li");
       commentLi.innerText = comment;
       list.appendChild(commentLi);
+      event.preventDefault();
     }else{
       alert("Comment field cannot be blank!");
     }
