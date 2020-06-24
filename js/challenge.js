@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
       let commentLi = document.createElement("li");
       commentLi.innerText = comment;
       list.appendChild(commentLi);
+      document.getElementById("comment-input").value ="";
       event.preventDefault();
     }else{
       alert("Comment field cannot be blank!");
