@@ -1,29 +1,4 @@
-document.addEventListener("DOMContentLoaded", startDOMChallenge);
-
-function startDOMChallenge(){
-  let sec=0;
-
-  let secMonitoring;
-  startCounter();
-
-  function startCounter(){
-    secMonitoring = setInterval(updateCounter, 1000);
-  }
-
-  function stopCounter(){
-    clearInterval(secMonitoring);
-  }
-
-  function increaseCounter (){
-    return ++sec;
-  }
-  function decreaseCounter(){
-    return sec >0? --sec : 0 ;
-  }
-
-  function updateCounter(){
-    document.getElementById("counter").innerText = increaseCounter();
-  }
+document.addEventListener("DOMContentLoaded", ()=>{
 
 
   document.getElementById("heart").addEventListener("click", ()=>{
@@ -62,4 +37,4 @@ function startDOMChallenge(){
     startCounter();
   });
 
-}
+});
