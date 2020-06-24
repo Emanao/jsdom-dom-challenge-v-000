@@ -61,4 +61,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     document.getElementById("counter").innerText = decreaseCounter();
     startCounter();
   });
+
+  document.getElementById("submit").addEventListener("click", ()=>{
+  });
 });
