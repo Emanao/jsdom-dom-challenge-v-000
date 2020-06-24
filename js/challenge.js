@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     if (comment.trim !=""){
       let list = document.getElementById("list").value;
       li = document.createElement("li");
-      
+
     }else{
       alert("Comment field cannot be blank!");
     }
